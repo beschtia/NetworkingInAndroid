@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/marginLarge"
+    android:paddingEnd="@dimen/marginLarge">
+
+    <TextView
+        android:id="@+id/editTaskHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/HeadingTextView"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:text="@string/edit_title"/>
+    <EditText
+        android:id="@+id/editTaskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_hint"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:inputType="text"
+        android:freezesText="true"
+        tools:ignore="Autofill"/>
+    <Button
+        android:id="@+id/saveEditAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginLarge"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:layout_gravity="center"
+        android:text="@string/saveTaskActionText"/>
+
+</LinearLayout>
